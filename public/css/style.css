@@ -20,7 +20,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: rgb(179, 0, 0);
+  background-color: #b30000;
   border: 3px solid black;
   border-radius: 20px;
 }
@@ -47,6 +47,7 @@ body {
   object-fit: cover;
   opacity: 0;
   z-index: 1;
+  transition: 0.3s;
 }
 .apresentation_img img.select {
   opacity: 1;

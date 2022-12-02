@@ -46,6 +46,7 @@ body{
       object-fit: cover;
       opacity: 0;
       z-index: 1;
+      transition: .3s;
       &.select{
          opacity: 1;
       }
