@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Lista de filmes | TMDB API</title>
+   <link rel="stylesheet" href="public/css/all.min.css">
+   <link rel="stylesheet" href="public/css/style.css">
+   <link rel="shortcut icon" href="public/img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+   <div id="imgFilms" class="apresentation_img"></div>
+   <header>
+      <div class="center">
+         <h3><i class="fa-solid fa-film"></i> Film</h3>
+         <h1 id="outTitle"></h1>
+         <p id="outDescription"></p>
+         <p id="outScore"></p>
+      </div>
+   </header>
+   <section class="container_cards">
+      <div class="center">
+         <div class="container_nav">
+            <h2>Page <span id="page"></span></h2>
+            <div class="nav">
+               <i id="navLeft" class="fa-solid fa-arrow-left" title="previous"></i>
+               <i id="navRight"class="fa-solid fa-arrow-right" title="next"></i>
+            </div>
+         </div>
+         <div class="cards">
+            <div class="cards_slide" id="slide">
+               
+            </div>
+         </div>
+         <div class="bullets" id="bullets"></div>
+      </div>
+   </section>
+
+   <script src="public/js/functions.js"></script>
+</body>
+</html>

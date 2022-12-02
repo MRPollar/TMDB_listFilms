@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+   <title>Agenda</title>
+</head>
+<body>
+   <div class="login">
+      <form class="login-form">
+         <h2>Log in</h2>
+         <div class="input-wrapper">
+            <label for="inEmail">E-mail</label>
+            <input type="email" name="email" id="inEmail" class="mobile-text"/>
+         </div>
+         <div class="input-wrapper">
+            <label for="inPassword">Password</label>
+            <input type="password" name="password" id="inPassword" class="mobile-text"/>
+         </div>
+         <input type="submit" name="acao" value="Log in"/>
+         <input type="button" name="acao" value="sign up" id="register"/>
+      </form>
+   </div>
+
+
+   <div class="container-register">
+      <button id="decline">&larr;</button>
+      <form class="register-form">
+         <h2>Sign up</h2>
+         <div class="input-wrapper">
+            <label for="inEmailRegis">E-mail</label>
+            <input type="email" id="inEmailRegis" name="email" class="mobile-text"/>
+         </div>
+         <div class="input-wrapper">
+            <label for="inPasswordRegis">Password</label>
+            <input type="password" id="inPasswordRegis" name="password" class="mobile-text"/>
+         </div>
+         <div class="input-wrapper">
+            <label for="inPasswordConfirm">Confirm password</label>
+            <input type="password" id="inPasswordConfirm" name="password" required class="mobile-text"/>
+         </div>
+         <input type="submit" value="register" name="acao"/>
+      </form>
+   </div>
+
+
+   <div class="container-login">
+      <div class="logout-wrapper">
+         <div>
+            <h2>Schedule</h2>
+            <a class="logout" href="javascript:void(0)">Log out</a>
+         </div>
+      </div>
+      <dic class="container">
+         <form action="" class="form-cadastro-tarefa">
+            <h2>Inform task</h2>
+            <textarea id="inTarefa"></textarea>
+            <h3>Date</h3>
+            <input type="datetime-local" name="datetime" id="inDatetime"/>
+            <input type="submit" value="register task" name="acao"/>
+         </form>
+         <div class="tarefas-usuario">
+            <h2>current tasks:</h2>
+            <ul id="tarefas"></ul>
+         </div>
+      </dic>
+   </div>
+
+   <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+
+   <script src="js/firebaseApp.js"></script>
+</body>
+</html>
